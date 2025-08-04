@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { GAMES_DATA } from '../data/gamesData';
 
-// Import game components
-import ConstitutionalHangman from './games/ConstitutionalHangman';
-import PreamblePuzzleQuest from './games/PreamblePuzzleQuest';
-import CivicScorekeeper from './games/CivicScorekeeper';
-import ElectionTrail from './games/ElectionTrail';
-import ConstitutionalSnakesLadders from './games/ConstitutionalSnakesLadders';
-import AshokaVault from './games/AshokaVault';
+// Lazy load game components
+const ConstitutionalHangman = React.lazy(() => import('./games/ConstitutionalHangman'));
+const PreamblePuzzleQuest = React.lazy(() => import('./games/PreamblePuzzleQuest'));
+const CivicScorekeeper = React.lazy(() => import('./games/CivicScorekeeper'));
+const ElectionTrail = React.lazy(() => import('./games/ElectionTrail'));
+const ConstitutionalSnakesLadders = React.lazy(() => import('./games/ConstitutionalSnakesLadders'));
+const AshokaVault = React.lazy(() => import('./games/AshokaVault'));
 
 const GameEngine = ({ gameId, onBackToHub }) => {
   const gameData = GAMES_DATA.find(game => game.id === gameId);
@@ -38,7 +38,19 @@ const GameEngine = ({ gameId, onBackToHub }) => {
 
   return (
     <div className="game-engine">
-      {renderGame()}
+      <Suspense fallback={
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          height: '50vh',
+          fontSize: '18px'
+        }}>
+          Loading game...
+        </div>
+      }>
+        {renderGame()}
+      </Suspense>
     </div>
   );
 };
