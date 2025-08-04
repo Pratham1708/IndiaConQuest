@@ -1,4 +1,4 @@
-# 🇮🇳 IndiaCon Quest
+# IndiaCon Quest
 
 **IndiaCon Quest** is a vibrant, interactive web platform designed to celebrate and explore the rich history, culture, geography, and achievements of India through fun and engaging content. Whether you're a student, enthusiast, or simply curious, India Conquest lets you test your knowledge and learn about India in an enjoyable way.
 
