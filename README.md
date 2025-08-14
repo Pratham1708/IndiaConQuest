@@ -61,6 +61,7 @@ A modern web-based arcade featuring constitutional mini-games that make learning
   - [How to Contribute](#how-to-contribute)
   - [Contribution Guidelines](#contribution-guidelines)
 - [� Acknnowledgments](#-acknowledgments)
+- [📜 License]
 
 ---
 
@@ -450,3 +451,7 @@ We welcome contributions to make constitutional education more engaging!
 **"Gaming for Democracy, Learning for Liberty"** 🇮🇳
 
 _IndiaCon Quest - Where Constitutional Knowledge Meets Interactive Entertainment_
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
