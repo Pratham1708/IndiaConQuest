@@ -61,7 +61,7 @@ A modern web-based arcade featuring constitutional mini-games that make learning
   - [How to Contribute](#how-to-contribute)
   - [Contribution Guidelines](#contribution-guidelines)
 - [� Acknnowledgments](#-acknowledgments)
-- [📜 License]
+- [📜 License](#-license)
 
 ---
 
